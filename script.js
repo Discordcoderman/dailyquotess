@@ -1,7 +1,7 @@
 let currentQuoteIndex = 0;
 let currentCharIndex = 0;
 let isDeleting = false;
-let typingSpeed = 30; // Changed from 100 to 30 - much faster typing
+let typingSpeed = 60; // Changed from 100 to 30 - much faster typing
 let pauseTime = 2000;
 let currentQuote = null;
 
