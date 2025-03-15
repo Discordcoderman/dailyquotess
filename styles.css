@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Changed to black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    max-width: 1000px; /* Increased from 800px to 1000px */
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.quote-container {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure it takes full width of container */
+    margin-bottom: 2rem; /* Add some bottom margin */
+}
+
+#quote {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    min-height: 100px;
+    width: 100%;
+    padding: 0 1rem;
+    font-weight: bold;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-height: none; /* Remove any max height limitation */
+}
+
+.quote-container {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0; /* Add some padding */
+}
+
+#author {
+    font-style: italic;
+    font-size: 1.2rem;
+    align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    #quote {
+        font-size: 1.4rem;
+    }
+}
