@@ -1,7 +1,7 @@
 let currentQuoteIndex = 0;
 let currentCharIndex = 0;
 let isDeleting = false;
-let typingSpeed = 60; // Changed from 100 to 30 - much faster typing
+let typingSpeed = 100; // Changed from 100 to 30 - much faster typing
 let pauseTime = 2000;
 let currentQuote = null;
 
@@ -51,7 +51,7 @@ function typeWriter() {
     }
     
     // Adjust typing speed
-    let speed = isDeleting ? typingSpeed / 5 : typingSpeed;
+    let speed = isDeleting ? typingSpeed / 10 : typingSpeed;
     
     // If we're at the end of the quote or just started a new one, pause longer
     if ((isDeleting && currentCharIndex === 0) || (!isDeleting && currentCharIndex === 1)) {
